@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D86B50297E8C0ABFD81529A /* Pods_Tweety.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12756BF4CDF0232AA3584730 /* Pods_Tweety.framework */; };
 		ED7246061E4988BE00AF681E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7246051E4988BE00AF681E /* AppDelegate.swift */; };
 		ED72460D1E4988BE00AF681E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED72460C1E4988BE00AF681E /* Assets.xcassets */; };
 		ED7246101E4988BE00AF681E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED72460E1E4988BE00AF681E /* LaunchScreen.storyboard */; };
 		ED7246181E4989C900AF681E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7246171E4989C900AF681E /* HomeController.swift */; };
+		ED86719A1E4A56C2004D6BFF /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671991E4A56C2004D6BFF /* HomeDatasourceController.swift */; };
+		ED86719F1E4A5BE3004D6BFF /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86719E1E4A5BE3004D6BFF /* Cells.swift */; };
+		ED8671A11E4A5C0C004D6BFF /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12756BF4CDF0232AA3584730 /* Pods_Tweety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tweety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8741049DCDC0482CECC0201E /* Pods-Tweety.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweety.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tweety/Pods-Tweety.debug.xcconfig"; sourceTree = "<group>"; };
+		A791AC8DE825DDE870CE7074 /* Pods-Tweety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweety.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tweety/Pods-Tweety.release.xcconfig"; sourceTree = "<group>"; };
 		ED7246021E4988BE00AF681E /* Tweety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7246051E4988BE00AF681E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED72460C1E4988BE00AF681E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED72460F1E4988BE00AF681E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED7246111E4988BE00AF681E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED7246171E4989C900AF681E /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		ED8671991E4A56C2004D6BFF /* HomeDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
+		ED86719E1E4A5BE3004D6BFF /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D86B50297E8C0ABFD81529A /* Pods_Tweety.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E37C8669490AEA9A37EE448 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12756BF4CDF0232AA3584730 /* Pods_Tweety.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA90F1108CE3A579CE67C1D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8741049DCDC0482CECC0201E /* Pods-Tweety.debug.xcconfig */,
+				A791AC8DE825DDE870CE7074 /* Pods-Tweety.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED7245F91E4988BE00AF681E = {
 			isa = PBXGroup;
 			children = (
 				ED7246041E4988BE00AF681E /* Tweety */,
 				ED7246031E4988BE00AF681E /* Products */,
+				BA90F1108CE3A579CE67C1D5 /* Pods */,
+				1E37C8669490AEA9A37EE448 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,13 +82,40 @@
 		ED7246041E4988BE00AF681E /* Tweety */ = {
 			isa = PBXGroup;
 			children = (
+				ED86719D1E4A5BBE004D6BFF /* View */,
+				ED86719B1E4A5BB2004D6BFF /* Model */,
+				ED86719C1E4A5BB7004D6BFF /* Controller */,
 				ED7246051E4988BE00AF681E /* AppDelegate.swift */,
+				ED7246171E4989C900AF681E /* HomeController.swift */,
 				ED72460C1E4988BE00AF681E /* Assets.xcassets */,
 				ED72460E1E4988BE00AF681E /* LaunchScreen.storyboard */,
 				ED7246111E4988BE00AF681E /* Info.plist */,
-				ED7246171E4989C900AF681E /* HomeController.swift */,
 			);
 			path = Tweety;
+			sourceTree = "<group>";
+		};
+		ED86719B1E4A5BB2004D6BFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ED86719C1E4A5BB7004D6BFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED8671991E4A56C2004D6BFF /* HomeDatasourceController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		ED86719D1E4A5BBE004D6BFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED86719E1E4A5BE3004D6BFF /* Cells.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED7246141E4988BE00AF681E /* Build configuration list for PBXNativeTarget "Tweety" */;
 			buildPhases = (
+				4778A439AC9A7B730FFDE651 /* [CP] Check Pods Manifest.lock */,
 				ED7245FE1E4988BE00AF681E /* Sources */,
 				ED7245FF1E4988BE00AF681E /* Frameworks */,
 				ED7246001E4988BE00AF681E /* Resources */,
+				C0A5B02B01B85EB3AABFAC5E /* [CP] Embed Pods Frameworks */,
+				20919C1C7916CDFB7A5E6FCA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,12 +188,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20919C1C7916CDFB7A5E6FCA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tweety/Pods-Tweety-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4778A439AC9A7B730FFDE651 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0A5B02B01B85EB3AABFAC5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tweety/Pods-Tweety-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED7245FE1E4988BE00AF681E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8671A11E4A5C0C004D6BFF /* HomeDatasource.swift in Sources */,
 				ED7246061E4988BE00AF681E /* AppDelegate.swift in Sources */,
+				ED86719F1E4A5BE3004D6BFF /* Cells.swift in Sources */,
+				ED86719A1E4A56C2004D6BFF /* HomeDatasourceController.swift in Sources */,
 				ED7246181E4989C900AF681E /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +281,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -219,6 +331,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -245,6 +358,7 @@
 		};
 		ED7246151E4988BE00AF681E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8741049DCDC0482CECC0201E /* Pods-Tweety.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6CU374MXYV;
@@ -258,6 +372,7 @@
 		};
 		ED7246161E4988BE00AF681E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A791AC8DE825DDE870CE7074 /* Pods-Tweety.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6CU374MXYV;
