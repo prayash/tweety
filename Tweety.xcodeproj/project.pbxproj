@@ -15,6 +15,8 @@
 		ED86719A1E4A56C2004D6BFF /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671991E4A56C2004D6BFF /* HomeDatasourceController.swift */; };
 		ED86719F1E4A5BE3004D6BFF /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86719E1E4A5BE3004D6BFF /* Cells.swift */; };
 		ED8671A11E4A5C0C004D6BFF /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */; };
+		ED8671A31E4A66DB004D6BFF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671A21E4A66DB004D6BFF /* User.swift */; };
+		ED8671A51E4A6A07004D6BFF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671A41E4A6A07004D6BFF /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		ED8671991E4A56C2004D6BFF /* HomeDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
 		ED86719E1E4A5BE3004D6BFF /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
+		ED8671A21E4A66DB004D6BFF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ED8671A41E4A6A07004D6BFF /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */,
+				ED8671A21E4A66DB004D6BFF /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				ED86719E1E4A5BE3004D6BFF /* Cells.swift */,
+				ED8671A41E4A6A07004D6BFF /* UserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -243,9 +249,11 @@
 			files = (
 				ED8671A11E4A5C0C004D6BFF /* HomeDatasource.swift in Sources */,
 				ED7246061E4988BE00AF681E /* AppDelegate.swift in Sources */,
+				ED8671A31E4A66DB004D6BFF /* User.swift in Sources */,
 				ED86719F1E4A5BE3004D6BFF /* Cells.swift in Sources */,
 				ED86719A1E4A56C2004D6BFF /* HomeDatasourceController.swift in Sources */,
 				ED7246181E4989C900AF681E /* HomeController.swift in Sources */,
+				ED8671A51E4A6A07004D6BFF /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
