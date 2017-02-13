@@ -73,6 +73,8 @@ class UserCell: DatasourceCell {
         separatorLineView.isHidden = false
         separatorLineView.backgroundColor = UIColor(r: 230, g: 230, b: 230)
         
+        backgroundColor = .white
+        
         addSubview(profileImageView)
         addSubview(nameLabel)
         addSubview(usernameLabel)
