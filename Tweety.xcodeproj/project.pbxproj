@@ -16,6 +16,7 @@
 		ED8671A11E4A5C0C004D6BFF /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */; };
 		ED8671A31E4A66DB004D6BFF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671A21E4A66DB004D6BFF /* User.swift */; };
 		ED8671A51E4A6A07004D6BFF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671A41E4A6A07004D6BFF /* UserCell.swift */; };
+		EDD87A0B1E51838300728AC2 /* HomeDatasourceController+navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD87A0A1E51838300728AC2 /* HomeDatasourceController+navbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
 		ED8671A21E4A66DB004D6BFF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ED8671A41E4A6A07004D6BFF /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		EDD87A0A1E51838300728AC2 /* HomeDatasourceController+navbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+navbar.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				ED8671991E4A56C2004D6BFF /* HomeDatasourceController.swift */,
+				EDD87A0A1E51838300728AC2 /* HomeDatasourceController+navbar.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			files = (
 				ED8671A11E4A5C0C004D6BFF /* HomeDatasource.swift in Sources */,
 				ED7246061E4988BE00AF681E /* AppDelegate.swift in Sources */,
+				EDD87A0B1E51838300728AC2 /* HomeDatasourceController+navbar.swift in Sources */,
 				ED8671A31E4A66DB004D6BFF /* User.swift in Sources */,
 				ED86719F1E4A5BE3004D6BFF /* Cells.swift in Sources */,
 				ED86719A1E4A56C2004D6BFF /* HomeDatasourceController.swift in Sources */,
