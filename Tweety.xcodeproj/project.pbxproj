@@ -11,7 +11,6 @@
 		ED7246061E4988BE00AF681E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7246051E4988BE00AF681E /* AppDelegate.swift */; };
 		ED72460D1E4988BE00AF681E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED72460C1E4988BE00AF681E /* Assets.xcassets */; };
 		ED7246101E4988BE00AF681E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED72460E1E4988BE00AF681E /* LaunchScreen.storyboard */; };
-		ED7246181E4989C900AF681E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7246171E4989C900AF681E /* HomeController.swift */; };
 		ED86719A1E4A56C2004D6BFF /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671991E4A56C2004D6BFF /* HomeDatasourceController.swift */; };
 		ED86719F1E4A5BE3004D6BFF /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86719E1E4A5BE3004D6BFF /* Cells.swift */; };
 		ED8671A11E4A5C0C004D6BFF /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */; };
@@ -28,7 +27,6 @@
 		ED72460C1E4988BE00AF681E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED72460F1E4988BE00AF681E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED7246111E4988BE00AF681E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED7246171E4989C900AF681E /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		ED8671991E4A56C2004D6BFF /* HomeDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
 		ED86719E1E4A5BE3004D6BFF /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				ED86719B1E4A5BB2004D6BFF /* Model */,
 				ED86719C1E4A5BB7004D6BFF /* Controller */,
 				ED7246051E4988BE00AF681E /* AppDelegate.swift */,
-				ED7246171E4989C900AF681E /* HomeController.swift */,
 				ED72460C1E4988BE00AF681E /* Assets.xcassets */,
 				ED72460E1E4988BE00AF681E /* LaunchScreen.storyboard */,
 				ED7246111E4988BE00AF681E /* Info.plist */,
@@ -252,7 +249,6 @@
 				ED8671A31E4A66DB004D6BFF /* User.swift in Sources */,
 				ED86719F1E4A5BE3004D6BFF /* Cells.swift in Sources */,
 				ED86719A1E4A56C2004D6BFF /* HomeDatasourceController.swift in Sources */,
-				ED7246181E4989C900AF681E /* HomeController.swift in Sources */,
 				ED8671A51E4A6A07004D6BFF /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
