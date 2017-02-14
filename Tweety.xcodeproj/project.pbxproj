@@ -17,6 +17,7 @@
 		ED8671A11E4A5C0C004D6BFF /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */; };
 		ED8671A31E4A66DB004D6BFF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671A21E4A66DB004D6BFF /* User.swift */; };
 		ED8671A51E4A6A07004D6BFF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8671A41E4A6A07004D6BFF /* UserCell.swift */; };
+		ED9E35F11E53BF2900DEBC81 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E35F01E53BF2900DEBC81 /* Tweet.swift */; };
 		EDD87A0B1E51838300728AC2 /* HomeDatasourceController+navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD87A0A1E51838300728AC2 /* HomeDatasourceController+navbar.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
 		ED8671A21E4A66DB004D6BFF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ED8671A41E4A6A07004D6BFF /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		ED9E35F01E53BF2900DEBC81 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		EDD87A0A1E51838300728AC2 /* HomeDatasourceController+navbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+navbar.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,10 +90,10 @@
 		ED7246041E4988BE00AF681E /* Tweety */ = {
 			isa = PBXGroup;
 			children = (
+				ED7246051E4988BE00AF681E /* AppDelegate.swift */,
 				ED86719D1E4A5BBE004D6BFF /* View */,
 				ED86719B1E4A5BB2004D6BFF /* Model */,
 				ED86719C1E4A5BB7004D6BFF /* Controller */,
-				ED7246051E4988BE00AF681E /* AppDelegate.swift */,
 				ED72460C1E4988BE00AF681E /* Assets.xcassets */,
 				ED72460E1E4988BE00AF681E /* LaunchScreen.storyboard */,
 				ED7246111E4988BE00AF681E /* Info.plist */,
@@ -104,6 +106,7 @@
 			children = (
 				ED8671A01E4A5C0C004D6BFF /* HomeDatasource.swift */,
 				ED8671A21E4A66DB004D6BFF /* User.swift */,
+				ED9E35F01E53BF2900DEBC81 /* Tweet.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				ED8671A11E4A5C0C004D6BFF /* HomeDatasource.swift in Sources */,
 				ED7246061E4988BE00AF681E /* AppDelegate.swift in Sources */,
 				EDD87A0B1E51838300728AC2 /* HomeDatasourceController+navbar.swift in Sources */,
+				ED9E35F11E53BF2900DEBC81 /* Tweet.swift in Sources */,
 				ED6285411E523BC40043A00F /* TweetCell.swift in Sources */,
 				ED8671A31E4A66DB004D6BFF /* User.swift in Sources */,
 				ED86719F1E4A5BE3004D6BFF /* UserHeaderFooter.swift in Sources */,
