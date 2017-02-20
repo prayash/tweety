@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D86B50297E8C0ABFD81529A /* Pods_Tweety.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12756BF4CDF0232AA3584730 /* Pods_Tweety.framework */; };
 		ED6285411E523BC40043A00F /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6285401E523BC40043A00F /* TweetCell.swift */; };
+		ED6EC21F1E5AA96100914584 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6EC21E1E5AA96100914584 /* Service.swift */; };
 		ED7246061E4988BE00AF681E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7246051E4988BE00AF681E /* AppDelegate.swift */; };
 		ED72460D1E4988BE00AF681E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED72460C1E4988BE00AF681E /* Assets.xcassets */; };
 		ED7246101E4988BE00AF681E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED72460E1E4988BE00AF681E /* LaunchScreen.storyboard */; };
@@ -26,6 +27,7 @@
 		8741049DCDC0482CECC0201E /* Pods-Tweety.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweety.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tweety/Pods-Tweety.debug.xcconfig"; sourceTree = "<group>"; };
 		A791AC8DE825DDE870CE7074 /* Pods-Tweety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweety.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tweety/Pods-Tweety.release.xcconfig"; sourceTree = "<group>"; };
 		ED6285401E523BC40043A00F /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		ED6EC21E1E5AA96100914584 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		ED7246021E4988BE00AF681E /* Tweety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7246051E4988BE00AF681E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED72460C1E4988BE00AF681E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		ED6EC21D1E5AA95400914584 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ED6EC21E1E5AA96100914584 /* Service.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		ED7245F91E4988BE00AF681E = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				ED7246051E4988BE00AF681E /* AppDelegate.swift */,
+				ED6EC21D1E5AA95400914584 /* Service */,
 				ED86719B1E4A5BB2004D6BFF /* Model */,
 				ED86719D1E4A5BBE004D6BFF /* View */,
 				ED86719C1E4A5BB7004D6BFF /* Controller */,
@@ -260,6 +271,7 @@
 				ED6285411E523BC40043A00F /* TweetCell.swift in Sources */,
 				ED8671A31E4A66DB004D6BFF /* User.swift in Sources */,
 				ED86719F1E4A5BE3004D6BFF /* UserHeaderFooter.swift in Sources */,
+				ED6EC21F1E5AA96100914584 /* Service.swift in Sources */,
 				ED86719A1E4A56C2004D6BFF /* HomeDatasourceController.swift in Sources */,
 				ED8671A51E4A6A07004D6BFF /* UserCell.swift in Sources */,
 			);

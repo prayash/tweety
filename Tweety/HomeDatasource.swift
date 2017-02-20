@@ -12,32 +12,17 @@ import SwiftyJSON
 
 class HomeDatasource: Datasource, JSONDecodable {
     
-    var users = [User]()
-    required init(json: JSON) throws {
-        var users = [User]()
-        let array = json["users"].array
-        
-        for userJson in array! {
-            let name = userJson["name"].stringValue
-            let username = userJson["username"].stringValue
-            let bio = userJson["bio"].stringValue
-            
-            let user = User(name: name, username: username, bioText: bio, profileImage: UIImage())
-            users.append(user)
-        }
-        
-        self.users = users
-    }
+    let users: [User]
+    let tweets: [Tweet]
     
-    let tweets: [Tweet] = {
-        let prayashUser = User(name: "Prayash Thapa", username: "@effulgence", bioText: "I make music and write code that draws things. I am also an art and guitar nerd! Follow me if you're cool. I'll follow back! Promise!", profileImage: #imageLiteral(resourceName: "profile_image"))
-        let rayUser = User(name: "Prayash Thapa", username: "@effulgence", bioText: "Ray Renderlich is an iPhone developer and tweets on topics related to iPhone, software and gaming. Check out our conference.", profileImage: #imageLiteral(resourceName: "profile_image"))
+    required init(json: JSON) throws {
+
+        let usersJsonArray = json["users"].array
+        self.users = usersJsonArray!.map({ User(json: $0) })
         
-        let tweet = Tweet(user: prayashUser, msg: "Hey guys just released my new shitty song. I need a really really long text block to render so yeah hopefully this renders!")
-        
-        let tweet2 = Tweet(user: rayUser, msg: "This is the second message so yeah.")
-        return [tweet, tweet2]
-    }()
+        let tweetsJsonArray = json["tweets"].array
+        self.tweets = tweetsJsonArray!.map({ Tweet(json: $0) })
+    }
     
     override func headerClasses() -> [DatasourceCell.Type]? {
         return [UserHeader.self]
