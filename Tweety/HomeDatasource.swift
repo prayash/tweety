@@ -7,17 +7,27 @@
 //
 
 import LBTAComponents
+import TRON
+import SwiftyJSON
 
-class HomeDatasource: Datasource {
+class HomeDatasource: Datasource, JSONDecodable {
     
-    let users: [User] = {
-        let prayashUser = User(name: "Prayash Thapa", username: "@effulgence", bioText: "I make music and write code that draws things. I am also an art and guitar nerd! Follow me if you're cool. I'll follow back! Promise!", profileImage: #imageLiteral(resourceName: "profile_image"))
-        let rayUser = User(name: "Ray Wenderlich", username: "@rwenderlich", bioText: "Ray Renderlich is an iPhone developer and tweets on topics related to iPhone, software and gaming. Check out our conference.", profileImage: #imageLiteral(resourceName: "ray_profile_image"))
+    var users = [User]()
+    required init(json: JSON) throws {
+        var users = [User]()
+        let array = json["users"].array
         
-//        let pakUser = User(name: "Pakalu Papito", username: "@loser", bioText: "Ray Renderlich is an iPhone developer and tweets on topics related to iPhone, software and gaming. Check out our conference Ray Renderlich is an iPhone developer and tweets on topics related to iPhone, software and gaming. Check out our conference.", profileImage: #imageLiteral(resourceName: "profile_image"))
+        for userJson in array! {
+            let name = userJson["name"].stringValue
+            let username = userJson["username"].stringValue
+            let bio = userJson["bio"].stringValue
+            
+            let user = User(name: name, username: username, bioText: bio, profileImage: UIImage())
+            users.append(user)
+        }
         
-        return [prayashUser, rayUser]
-    }()
+        self.users = users
+    }
     
     let tweets: [Tweet] = {
         let prayashUser = User(name: "Prayash Thapa", username: "@effulgence", bioText: "I make music and write code that draws things. I am also an art and guitar nerd! Follow me if you're cool. I'll follow back! Promise!", profileImage: #imageLiteral(resourceName: "profile_image"))
