@@ -59,4 +59,8 @@ class HomeDatasourceController: DatasourceController {
         return CGSize(width: view.frame.width, height: 64)
     }
     
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        collectionViewLayout.invalidateLayout()
+    }
+    
 }
