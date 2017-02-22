@@ -14,11 +14,24 @@ class HomeDatasourceController: DatasourceController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(errorMsgLabel)
+        errorMsgLabel.fillSuperview()
         setupNavigationBarItems();
         
         collectionView?.backgroundColor = UIColor(r: 232, g: 235, b: 241)
         
-        Service.sharedInstance.fetchHomeFeed { (homeDatasource) in
+        Service.sharedInstance.fetchHomeFeed { (homeDatasource, err) in
+            if let err = err {
+                self.errorMsgLabel.isHidden = false
+                
+                if let apiError = err as? APIError<Service.JSONError> {
+                    if apiError.response?.statusCode != 200 {
+                        // 404 Error
+                        self.errorMsgLabel.text = "Status code was not 200"
+                    }
+                }
+            }
+            
             self.datasource = homeDatasource
         }
     }
@@ -65,5 +78,14 @@ class HomeDatasourceController: DatasourceController {
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
         collectionViewLayout.invalidateLayout()
     }
+    
+    let errorMsgLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Apologies, something went wrong. Please try again later..."
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.isHidden = true
+        return label
+    }()
     
 }
